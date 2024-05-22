@@ -1,0 +1,15 @@
+{
+  "generator-sicarator": {
+    "promptValues": {
+      "authorName": "Edmond Verdier",
+      "authorEmail": "edmond.verdier@sicara.com",
+      "ci": ".github",
+      "includeApi": false,
+      "includeDvc": false,
+      "includeStreamlit": true
+    },
+    "projectName": "baby game",
+    "projectSlug": "baby-game",
+    "projectDescription": "Project generated with Sicarator"
+  }
+}
