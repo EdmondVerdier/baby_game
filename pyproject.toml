@@ -6,6 +6,7 @@ authors = ["Edmond Verdier <edmond.verdier@sicara.com>"]
 
 [tool.poetry.dependencies]
 python = "3.11.6"
+streamlit = "^1.34.0"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.2"
