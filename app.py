@@ -24,7 +24,7 @@ if "sicariot" not in st.session_state:
 
 st.title("Qui est ce bébé ? 👶🍼")
 
-encoded_arrakiff = st.secrets["Arrakiff"]
+encoded_arrakiff = st.secrets["arrakiff"]
 st.sidebar.image(decode_image_from_base64(encoded_arrakiff))
 st.sidebar.title("Noms possibles")
 for item in MATCH_PHOTOS:
