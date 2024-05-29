@@ -2,6 +2,7 @@ import random
 import streamlit as st
 
 from src.constants import MATCH_PHOTOS
+from src.utils.encoder import decode_image_from_base64
 
 if "score" not in st.session_state:
     st.session_state.score = 0
@@ -23,7 +24,8 @@ if "sicariot" not in st.session_state:
 
 st.title("Qui est ce bébé ? 👶🍼")
 
-st.sidebar.image("data/logo/Arrakiff.png")
+encoded_arrakiff = st.secrets["images"]
+st.sidebar.image(decode_image_from_base64(encoded_arrakiff))
 st.sidebar.title("Noms possibles")
 for item in MATCH_PHOTOS:
     st.sidebar.write(item["name"])
