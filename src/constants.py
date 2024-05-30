@@ -54,6 +54,7 @@ MATCH_PHOTOS = [
     {"name": "Paul P", "photo": "data/Paul Pignal.png"},
     {"name": "Pauline", "photo": "data/Pauline Leopold.jpeg"},
     {"name": "Pierre", "photo": "data/Pierre Mérienne.jpg"},
+    {"name": "Pierre-Henri", "photo": "data/Pierre-Henri Cumenge.jpg"},
     {"name": "Rayann", "photo": "data/Rayann Bentounes.jpg"},
     {"name": "Simon", "photo": "data/Simon Playe.jpeg"},
     {"name": "Tarek", "photo": "data/Tarek Ayed.jpg"},
