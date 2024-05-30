@@ -68,9 +68,19 @@ def end_game() -> None:
 
 update_image()
 
-baby_name = st.text_input("Who is it ?")
+# baby_name = st.text_input("Who is it ?")
 
-if baby_name:
+names = [item["name"] for item in MATCH_PHOTOS]
+# Création du menu déroulant avec filtrage dynamique
+names.insert(0, "")
+baby_name = st.selectbox(
+    "Choisissez un nom",
+    options=names,
+    format_func=lambda name: f"{name}",
+)
+
+
+if baby_name!="":
     if baby_name == st.session_state.sicariot["name"]:
         st.write(f"Good job ! 🎉")
         st.session_state.score += 1
